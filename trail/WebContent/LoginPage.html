@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<form action="LoginServlet" method="post">
+<div class="login-box">
+<h1>Login</h1>
+<input type="radio" name="type" value="Admin">Admin
+<input type="radio" name="type" value="Mentor">Mentor
+<input type="radio" name="type" value="LP">LP
+<div class= "textbox">
+<i class="fa fa-user" aria-hidden="true"></i>
+<input type="text" placeholder="Enter Username" name="username" value"" required="required">
+</div>
+
+<div class= "textbox">
+<i class="fa fa-lock" aria-hidden="true"></i>
+<input type="password" placeholder=" Enter Password" name="password" value"" required="required"  title="must contain atleast one number one uppercase lowercase letter and atleast 8 or more characters">
+</div>
+<!-- pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-z]).{8,}" -->
+<input class="btn" type="submit"  value="Sign in">
+</div>
+</form>
+</body>
+</html>
